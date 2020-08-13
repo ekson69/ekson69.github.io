@@ -5,27 +5,30 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<style>
+			html, body {
+               margin: 0;
+               height: 100%;
+               overflow: hidden;
+            }
+		</style>
+
 	</head>
 	<body class="is-preload">
 		<!-- Content -->
-                        <div id="content">
-				<div class="inner">
-					<!-- Post -->
-					<article class="box post post-excerpt" style="text-align:center">
-						<h2>Welcome to GorangSai</h2>
-						<p>
-							 동백, 여주, 화성 밭에서 키우는 건강한 먹거리 나눔을 꿈꾸는 모임
-						</p>
-						<div class="info">
-							<span class="date"><span class="month">Mar</span> <span class="day">29</span><span class="year">, 2020</span></span>
-						</div>
-						<video src="images/gorangsai1.mp4" width="80%" controls>Your browser does not support the video tag.</video>
-					</article>
-				</div>
-			</div>
+
+		         <iframe src="about.html" frameborder="0" width="100%" name="iframe_content">
+			     </iframe>
 
 		<!-- Sidebar -->
-			<div id="sidebar">
+			<div id="sidebar" height="auto">
 
 				<!-- Logo -->
 					<h1 id="logo"><a href="#">GorangSai</a></h1>
@@ -33,13 +36,119 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="#">About</a></li>
-							<li><a href="#"><!--http://ekson69.pythonanywhere.com/gorangsai/diary/"-->Posts</a></li>
-							<li><a href="http://ekson69.pythonanywhere.com/gorangsai/diary/upload/" target="_blank">Post Upload on Ella's</a></li>
-							<li><a href="#"><!--http://cafe.daum.net/kusuwon/M4SL" target="_blank"-->Season1</a></li>
+							<li class="current"><a href="about.html" target="iframe_content">About</a></li>
+							<li><a href="http://ekson69.pythonanywhere.com/gorangsai/diary/">Posts</a></li>
+							<li><a href="http://ekson69.pythonanywhere.com/gorangsai/diary/upload/" target="iframe_content">Post Upload on Ella's</a></li>
+							<li><a href="http://cafe.daum.net/kusuwon/M4SL" target="_blank">Season1</a></li>
 							<!--li><a href="./test.html">Contact Me</a></li-->
 						</ul>
 					</nav>
+
+				<!-- Search -->
+					<!--section class="box search">
+						<form method="post" action="#">
+							<input type="text" class="text" name="search" placeholder="Search" />
+						</form>
+					</section-->
+
+				<!-- Text -->
+					<!--section class="box text-style1">
+						<div class="inner">
+							<p>
+								<strong>Striped:</strong> A free and fully responsive HTML5 site
+								template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>
+							</p>
+						</div>
+					</section-->
+
+				<!-- Recent Posts -->
+					<!--section class="box recent-posts">
+						<header>
+							<h2>Recent Posts</h2>
+						</header>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor</a></li>
+							<li><a href="#">Feugiat nisl aliquam</a></li>
+							<li><a href="#">Sed dolore magna</a></li>
+							<li><a href="#">Malesuada commodo</a></li>
+							<li><a href="#">Ipsum metus nullam</a></li>
+						</ul>
+					</section-->
+
+				<!-- Recent Comments -->
+					<!--section class="box recent-comments">
+						<header>
+							<h2>Recent Comments</h2>
+						</header>
+						<ul>
+							<li>case on <a href="#">Lorem ipsum dolor</a></li>
+							<li>molly on <a href="#">Sed dolore magna</a></li>
+							<li>case on <a href="#">Sed dolore magna</a></li>
+						</ul>
+					</section-->
+
+				<!-- Calendar -->
+					<!--section class="box calendar">
+						<div class="inner">
+							<table>
+								<caption>July 2014</caption>
+								<thead>
+									<tr>
+										<th scope="col" title="Monday">M</th>
+										<th scope="col" title="Tuesday">T</th>
+										<th scope="col" title="Wednesday">W</th>
+										<th scope="col" title="Thursday">T</th>
+										<th scope="col" title="Friday">F</th>
+										<th scope="col" title="Saturday">S</th>
+										<th scope="col" title="Sunday">S</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="4" class="pad"><span>&nbsp;</span></td>
+										<td><span>1</span></td>
+										<td><span>2</span></td>
+										<td><span>3</span></td>
+									</tr>
+									<tr>
+										<td><span>4</span></td>
+										<td><span>5</span></td>
+										<td><a href="#">6</a></td>
+										<td><span>7</span></td>
+										<td><span>8</span></td>
+										<td><span>9</span></td>
+										<td><a href="#">10</a></td>
+									</tr>
+									<tr>
+										<td><span>11</span></td>
+										<td><span>12</span></td>
+										<td><span>13</span></td>
+										<td class="today"><a href="#">14</a></td>
+										<td><span>15</span></td>
+										<td><span>16</span></td>
+										<td><span>17</span></td>
+									</tr>
+									<tr>
+										<td><span>18</span></td>
+										<td><span>19</span></td>
+										<td><span>20</span></td>
+										<td><span>21</span></td>
+										<td><span>22</span></td>
+										<td><a href="#">23</a></td>
+										<td><span>24</span></td>
+									</tr>
+									<tr>
+										<td><a href="#">25</a></td>
+										<td><span>26</span></td>
+										<td><span>27</span></td>
+										<td><span>28</span></td>
+										<td class="pad" colspan="3"><span>&nbsp;</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section-->
+
 				<!-- Copyright -->
 					<ul id="copyright">
 						<li>&copy; GorangSai.</li>
@@ -47,12 +156,6 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
